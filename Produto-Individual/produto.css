@@ -1,0 +1,226 @@
+/* CONFIG GERAL */
+* {
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+} body {
+  overflow-x: hidden;
+  background-color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  color: #30166b;
+  background-color: rgba(247, 213, 100, 0.774)
+
+} 
+html {
+  scroll-behavior: smooth;
+}
+/*FIM CONFIG GERAL */
+
+/* TIPOGRAFIA */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+/* FIM TIPOGRAFIA */
+
+/* NAVBAR */
+header {
+  position: fixed;
+  z-index: 100;
+}
+
+.navbarSuperior {
+  background-color: #30166b;
+  margin: auto;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  /* Sombra embaixo */
+}
+
+.box-img {
+  width: 50%;
+}
+
+.box-img img {
+  margin: auto;
+  height: 95%;
+  margin-left: 10%;
+}
+
+.icons {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  gap: 30%;
+  margin-left: 50%;
+}
+
+.icons img {
+  cursor: pointer;
+  width: 55px;
+  height: 30%;
+}
+
+.subNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border-radius: 0 0 15px 15px;
+  background-color: #f7d564e7;
+
+
+  text-decoration: none;
+
+  height: 40px;
+  width: 100%;
+}
+
+.subNavbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #30166b;
+  cursor: pointer;
+}
+/* FIM NAVBAR */
+
+/* INICIO DA MAIN  */
+main {
+  width: 100%;
+  height: 100%;
+  height: calc(100vh - 120px);
+  padding-top: 120px;
+  z-index: 1000000;
+}
+
+.all{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  margin: 2%;
+  gap: 8%;
+  margin-top: 5%;
+  background-color: #fff;
+
+}
+
+.ladoEsquerdo{
+  margin-left: -10%;
+  margin-right: 5%;
+
+  width: 28%;
+  height: 90%;  
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#produtos{
+  border: 3px solid #30166b;
+  margin-top: 15%;
+  border-radius: 20px;
+  height: 55vh;
+}
+
+.imagenzinha{
+  margin-top: 3%;
+}.img1{
+  max-width: fit-content;
+  border: 3px solid #30166b;
+  margin-left: 4.5%;
+  height: 90px;
+  border-radius: 20px;
+  transition: transform 0.2s ease;
+}.img1:hover{
+  transform: translateY(-4px);
+  transition: transform 0.2s ease out; 
+}
+
+.informacoes h1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 13%;
+  margin-bottom: 4%;
+
+  font-size: 450%;
+  font-family: "Lora", serif;
+  font-weight: 50;  
+}
+
+.precos{
+  margin-bottom: 5%;
+}.preco-antigo{
+  color: #30166ba1;
+  font-size: 150%;
+}.preco-produto{
+  color: #30166b;
+  font-size: 200%;
+}
+.contador{
+  background-color: #00000013;
+  width: 40%;
+  height: 4vh;
+  margin-bottom: 6%;  
+}
+
+.botaoSaiba{
+  margin-bottom: 9%;  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}.saibaMais{
+  border: 2px solid #f1f1f1; 
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); /* Sombra embaixo */
+  
+  width: 45vh;
+  height: 4vh;
+  margin-left: -15.7%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+
+  border-radius: 10px;
+  background-color: #30166b;
+  transition: transform 0.2s ease;
+
+  color: #F2D561;
+  font-size: 120%;
+  font-family: "Poppins", sans-serif;
+}.saibaMais:hover{
+  transform: translateY(-2px);
+  transition: transform 0.2s ease out; 
+}
+
+.formasPagamento{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  height: 65px;
+  font-weight: 30px;
+  margin-bottom: 10%;
+}
+
