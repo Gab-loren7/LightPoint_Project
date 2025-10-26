@@ -2,279 +2,185 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Light-Point</title>
-
-  <link rel="stylesheet" href="index.css" />
-  <script src="index.js"></script>
-
-  <!-- fonte do títulos -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <!-- fonte do corpo -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Light Point</title>
 </head>
 
 <body>
   <header>
     <div class="navbarSuperior">
-      <div class="box-img">
-        <img src="img/logoSuperior.png" alt="logoSuperior" id="logoSuperior" />
-      </div>
+      <img src="img/logoSuperior.png" alt="Logo-LightPoint" class="logoSuperior"> <!-- Logo da LightPoint-->
 
-      <div class="pesquisaEicons">
-        <div class="pesquisa">
-          <i class="bi bi-search"></i>
-          <input type="text" id="lupa" placeholder="Pesquisar" />
+      <div class="box-interativo">
+
+        <div class="box-pesquisa"> <!-- Input de Pesquisa-->
+          <i class="bi bi-search icon-navbarSuperior"></i> <!-- Icone de Pesquisa-->
+          <input type="text" class="input-pesquisa" placeholder="Pesquisar produtos">
         </div>
 
-        <div class="icons">
-          <img src="img/carrinho.png" alt="carrinho" id="carrinho" onclick="abrirCarrinho()" />
-          <img src="img/usuario.png" alt="usuario" id="usuario" onclick="irCadastro()" />
-        </div>
+        <i class="bi bi-cart-fill icon-navbarSuperior"></i> <!-- Icone do Carrinho-->
+        <i class="bi bi-person-fill icon-navbarSuperior"></i><!-- Icone do Perfil-->
       </div>
     </div>
 
-    <div class="subNavbar">
-      <a href="#"> Home </a>
-      <a href="#Sobre"> Sobre </a>
-      <a href="#Mapa"> Mapa </a>
-      <a href="#Objetivo"> Objetivo </a>
-      <a href="#Sugestoes"> Sugestões </a>
-      <a href="../Produtos/index.html"> Produtos </a>
-      <a href="#Grupo"> Grupo </a>
+    <div class="navbar-Inferior"> <!-- Barra de Navegação Inferior-->
+      <a href="#Home">Início</a>
+      <a href="#Produtos">Produtos</a>
+      <a href="#Sobre">Sobre</a>
+      <a href="#Mapa">Mapa</a>
+      <a href="#Objetivo">Objetivo</a>
+      <a href="#">Sugestões</a>
+      <a href="#Equipe">Equipe</a>
     </div>
   </header>
 
-  <main>
-    <div class="banner">
-      <img src="img/bannerApagado.png" alt="bannerNormal" id="bannerApagado" class="banner-base" />
-      <img src="img/bannerAceso.png" alt="bannerAceso" id="bannerAceso" class="banner-hover" />
-    </div>
+  <main id="Home" style="scroll-margin-top: 300px;">
+    <div class="banner"></div> <!-- Banner Principal-->
 
-    <section id="Sobre" style="scroll-margin-top: 50px;">
-      <div class="titulos">
-        <h1>O que é a Light-Point?</h1>
-        <hr class="linha-texto" />
+    <div class="espacador"></div>
+
+    <!-- Section Produtos -->
+    <section class="Produtos" id="Produtos" style="scroll-margin-top: 200px;">
+      <div class="titulo">
+        <h2>Nossos Produtos</h2>
+        <hr>
       </div>
-      <div class="sobre">
-        <div class="margin">
+      <div class="espacador"></div>
 
-          <div class="texto1">
-            <p>
-              A Light Point é um projeto de inovação sustentável voltado para a
-              modernização da iluminação pública por meio da aplicação de
-              tecnologia inteligente e eficiente. A iniciativa propõe a
-              substituição dos sistemas tradicionais por um modelo mais avançado
-              e econômico, utilizando lâmpadas LED de alta durabilidade,
-              equipadas com sensores de movimento e sensores de horário.
-            </p>
-            <p>
-              O principal objetivo da Light Point é promover uma gestão mais
-              eficiente da energia utilizada na iluminação urbana, reduzindo
-              significativamente o desperdício energético e os custos
-              operacionais para os municípios. Além disso, ao diminuir o consumo
-              de eletricidade, o projeto contribui diretamente para a redução da
-              emissão de gases de efeito estufa, colaborando com os esforços
-              globais de combate às mudanças climáticas.
-            </p>
-            <p>
-              Unindo tecnologia de ponta, economia de recursos e
-              responsabilidade ambiental, a Light Point se posiciona como uma
-              solução inovadora e sustentável para as cidades do futuro — mais
-              inteligentes, seguras e comprometidas com o meio ambiente.
-            </p>
+      <div class="box-produtos">
+        <!-- Produto 1 -->
+        <a href="">
+          <div class="produto">
+            <img src="img/ImgProdutos/imagem1.png" alt="imagem do produto 1">
+            <div class="btn-visualizar">
+              <p>Visualizar</p>
+            </div>
           </div>
-
-          <div class="imgPoste imgPoste1">
-            <img src="img/imgposte1.png" alt="Imagem-Sobre" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Mapa" style="scroll-margin-top: 110px;">
-      <div class="titulos">
-        <h1>Mapa</h1>
-        <hr class="linha-texto" />
-      </div>
-
-      <div class="mapinha">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d113203.41700139109!2d-48.48699649521484!3d-27.54367294320888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1759345588962!5m2!1spt-BR!2sbr"
-          width="600" height="450" style="border: 5px solid #30166b" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Use o scroll do mouse no mapa para explorá-lo!</p>
-      </div>
-    </section>
-
-    <section id="Objetivo" style="scroll-margin-top: 100px;">
-      <div>
-        <h1 class="titulo-centralizado">Nosso Objetivo</h1>
-        <hr class="linha-texto" style="color: #f2d561" />
-      </div>
-
-      <div class="sobre">
-        <div class="margin">
-
-          <div class="imgPoste2">
-            <img src="img/imgposte1.png" alt="ImagemPoste-IA" />
-          </div>
-
-          <div class="texto2">
-            <p>
-              O objetivo da Light Point é transformar a gestão da iluminação
-              pública nas cidades por meio de soluções tecnológicas sustentáveis
-              e inteligentes. Utilizando sistemas avançados, como lâmpadas LED e
-              sensores inteligentes, o projeto busca otimizar o consumo de
-              energia, garantindo maior eficiência e reduzindo o impacto
-              ambiental.
-            </p>
-            <p>
-              A Light Point vai além da economia de recursos, comprometendo-se
-              também com a preservação do meio ambiente. Promove práticas
-              conscientes e alinhadas aos princípios da sustentabilidade,
-              contribuindo para a redução das emissões de carbono e para a
-              construção de cidades mais verdes e resilientes.
-            </p>
-            <p>
-              Nosso compromisso é oferecer uma solução inovadora que beneficie
-              toda a sociedade, tornando os espaços públicos mais seguros,
-              econômicos e tecnologicamente atualizados. Assim, proporcionamos
-              uma iluminação que se adapta às necessidades reais, garantindo
-              conforto, segurança e sustentabilidade para as cidades do futuro.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Sugestoes">
-      <div class="titulos">
-        <div class="meio">
-          <h1>Deixe sua sugestão!</h1>
-          <hr class="linha-texto" />
-
-          <p style="font-size: 20px;">
-            Envie sua sugestão para nos ajudar a melhorar sua experiência!
-          </p>
-        </div>
-      </div>
-
-      <div class="margin">
-
-        <div class="dados">
-          <input type="text" placeholder="Digite seu nome" />
-          <input type="email" placeholder="Digite seu email" />
-          <input type="tel" placeholder="Digite seu telefone" />
-        </div>
-
-        <div class="mensagem">
-          <input type="text" placeholder="Mensagem" />
-          <i class="bi bi-arrow-right-circle-fill"></i>
-        </div>
-
-        <div class="rodapeSugestoes">
-          <div class="icone1">
-            <img src="img/imgEmail.png" id="iconsSugestao" alt="iconEmail" />
-            <p>LigthPoint@gmail.com</p>
-          </div>
-
-          <div class="icone2">
-            <img src="img/imgTel.png" id="iconsSugestao" alt="iconTel" />
-            <p>+55 (48) 97843-2639</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="Grupo" style="scroll-margin-top: 120px;">
-      <div class="titulos">
-        <div class="meio2">
-          <h1>Membros do grupo</h1>
-          <hr class="linha-texto" />
-        </div>
-      </div>
-
-      <div class="fotoNossas">
-        <div class="fotinhos">
-          <img src="img/MembrosGrupo/fotoMaria.png" alt="Maria" />
-          <p>Maria Eduarda Mello</p>
-        </div>
-
-        <div class="fotinhos">
-          <img src="img/MembrosGrupo/fotoSofia.png" alt="Sofia" />
-          <p>Sofia Helen Ferreira</p>
-        </div>
-
-        <div class="fotinhos">
-          <img src="img/MembrosGrupo/fotoJulia.png" alt="Julia" />
-          <p>Júlia Vianna Dancona</p>
-        </div>
-
-        <div class="fotinhos">
-          <img src="img/MembrosGrupo/fotoGabriel.png" alt="Gabriel" />
-          <p>Gabriel Carvalho Lorenssetti</p>
-        </div>
-
-        <div class="fotinhos">
-          <img src="img/MembrosGrupo/fotoLuiz.png" alt="Luiz" />
-          <p>Luiz Eduardo Emmerlich</p>
-        </div>
-
-        <div class="fotinhos">
-          <img src="img/MembrosGrupo/fotoAlec.png" alt="Alec" />
-          <p>Alec Fernandes Nunes</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="Rodape">
-      <div class="conteudo-rodape">
-        <a href="https://www.instagram.com/" alt="Instagram"> Instagram </a>
-        <a href="https://www.whatsapp.com/?lang=pt" alt="WhatsApp">
-          WhatsApp
         </a>
-        <a href="https://www.facebook.com/" alt="Facebook "> Facebook </a>
-        <a href="https://www.youtube.com/" alt="Youtube"> YouTube </a>
-        <a href="img/TERMOS E CONDIÇÕES DE USO – LIGHT POINT.pdf" alt="Termos e Condições">
-          Termos e Condições
+        <!-- Produto 2 -->
+        <a href="">
+          <div class="produto">
+            <img src="img/ImgProdutos/imagem2.png" alt="imagem do produto 1">
+            <div class="btn-visualizar">
+              <p>Visualizar</p>
+            </div>
+          </div>
         </a>
+        <!-- Produto 3 -->
+        <a href="">
+          <div class="produto">
+            <img src="img/ImgProdutos/imagem3.png" alt="imagem do produto 1">
+            <div class="btn-visualizar">
+              <p>Visualizar</p>
+            </div>
+          </div>
+        </a>
+        <!-- Produto 4 -->
+        <a href="">
+          <div class="produto">
+            <img src="img/ImgProdutos/imagem4.png" alt="imagem do produto 1">
+            <div class="btn-visualizar">
+              <p>Visualizar</p>
+            </div>
+          </div>
+        </a>
+        <!-- Produto 5 -->
+        <a href="">
+          <div class="produto">
+            <img src="img/ImgProdutos/imagem5.png" alt="imagem do produto 1">
+            <div class="btn-visualizar">
+              <p>Visualizar</p>
+            </div>
+          </div>
+        </a>
+
       </div>
-      <div class="direitos">
-        <p>© 2025 LightPoint. Todos os direitos reservados.</p>
+    </section>
+
+    <div class="espacador"></div>
+
+    <!-- Section Sobre a Empresa -->
+    <section class="Sobre" id="Sobre" style="scroll-margin-top: 180px;">
+      <div class="titulo">
+        <h2>O que e a Light-Point?</h2>
+        <hr>
       </div>
+
+      <div class="espacador"></div>
+
+      <div class="box-sobre">
+        <p>A Light Point é um projeto de inovação sustentável voltado para a modernização da iluminação pública por meio
+          da aplicação de tecnologia inteligente e eficiente. A iniciativa propõe a substituição dos sistemas
+          tradicionais por um modelo mais avançado e econômico, utilizando lâmpadas LED de alta durabilidade, equipadas
+          com sensores de movimento e sensores de horário.
+
+          O principal objetivo da Light Point é promover uma gestão mais eficiente da energia utilizada na iluminação
+          urbana, reduzindo significativamente o desperdício energético e os custos operacionais para os municípios.
+          Além disso, ao diminuir o consumo de eletricidade, o projeto contribui diretamente para a redução da emissão
+          de gases de efeito estufa, colaborando com os esforços globais de combate às mudanças climáticas.
+
+          Unindo tecnologia de ponta, economia de recursos e responsabilidade ambiental, a Light Point se posiciona como
+          uma solução inovadora e sustentável para as cidades do futuro — mais inteligentes, seguras e comprometidas com
+          o meio ambiente.</p>
+        <img src="img/imgPoste.png" alt="Imagem sobre a Light-Point">
+      </div>
+    </section>
+
+    <div class="espacador"></div>
+
+    <!-- Section Mapa das instalações -->
+    <section class="Mapa" id="Mapa" style="scroll-margin-top: 150px;">
+      <div class="titulo">
+        <h2>Mapa de Instalações</h2>
+        <hr>
+      </div>
+
+      <div class="espacador"></div>
+
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yJNeOWOkmf_UOWOHMzE4-xMBJVhgpLs&ehbc=2E312F"
+        width="100%" height="550px"></iframe>
+    </section>
+
+    <div class="espacador"></div>
+
+    <!-- Section Objetivo da Empresa -->
+    <section class="Objetivo" id="Objetivo" style="padding-inline: 0px; scroll-margin-top: 100px;">
+      <div class="espacador"></div>
+      <div class="titulo">
+        <h2>Nosso Objetivo</h2>
+      </div>
+
+      <div class="espacador"></div>
+
+      <div class="box-objetivo">
+        <p>O objetivo da Light Point é transformar a gestão da iluminação pública nas cidades por meio de soluções
+          tecnológicas sustentáveis e inteligentes. Utilizando sistemas avançados, como lâmpadas LED e sensores
+          inteligentes, o projeto busca otimizar o consumo de energia, garantindo maior eficiência e reduzindo o impacto
+          ambiental.
+
+          A Light Point vai além da economia de recursos, comprometendo-se também com a preservação do meio ambiente.
+          Promove práticas conscientes e alinhadas aos princípios da sustentabilidade, contribuindo para a redução das
+          emissões de carbono e para a construção de cidades mais verdes e resilientes.
+
+          Nosso compromisso é oferecer uma solução inovadora que beneficie toda a sociedade, tornando os espaços
+          públicos mais seguros, econômicos e tecnologicamente atualizados. Assim, proporcionamos uma iluminação que se
+          adapta às necessidades reais, garantindo conforto, segurança e sustentabilidade para as cidades do futuro.</p>
+          <img src="img/imgposte1.png" alt="imagem sobre o objetivo da Light-Point">
+      </div>
+      <div class="espacador"></div>
+    </section>
+
+    <!-- Section Nossa Equipe -->
+    <section class="Equipe" id="Equipe">
+      <div class="espacador"></div>
     </section>
   </main>
 
-  <div id="modalCarrinho" class="modal-carrinho">
-    <div class="modal-content1">
-      <span class="close" onclick="fecharModalCarrinho()">&times;</span>
-      <h2>Carrinho de compras</h2>
-      <div id="carrinho-itens"></div>
-      <p id="carrinho-vazio">O carrinho está vazio no momento.</p>
-    </div>
-  </div>
+  <div class="janela-modal">
 
-  <div id="modalUsuario" class="modal-usuario">
-    <div class="modal-content">
-      <span class="close" onclick="fecharModalUsuario()"><i class="bi bi-x-circle"></i></span>
-      <p>Já possui cadastro?</p>
-      <a href="../Cadastro-Login/index.html"> Acesse sua conta </a>
-      <button onclick="entrarConta()" class="entrarBtn">Entrar</button>
-      <p>Cliente novo?</p>
-      <a href="../Cadastro-Login/index.html"> Cadastrar</a>
-    </div>
   </div>
 </body>
 

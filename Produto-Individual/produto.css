@@ -107,7 +107,7 @@ main {
   height: 100%;
   height: calc(100vh - 120px);
   padding-top: 120px;
-  z-index: 1000000;
+  z-index: 1;
 }
 
 .all{
