@@ -237,7 +237,9 @@ main {
 
 /* Objetivo */
 .Objetivo {
+  z-index: 3;
   background-color: #30166B;
+  box-shadow: 0px 15px 20px #000;
 }
 
 .Objetivo .titulo {
@@ -265,6 +267,28 @@ main {
 /* Fim Objetivo */
 
 /* Equipe */
+  .Equipe {
+    z-index: 2;
+    background-color: #F2D561;
+  }
+  .Equipe .titulo {
+    text-align: center;
+  }
+  .box-equipe{
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-equipe img {
+    margin: auto;
+    margin: 0px 15px;
+    width: 220px;
+    height: 230px;
 
+    object-fit: cover;
+    border: 7px solid #30166B;
+    border-radius: 50%;
+  }
 /* FimEquipe */
 /* Fim Main */
