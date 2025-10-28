@@ -33,8 +33,8 @@
       <a href="#Sobre">Sobre</a>
       <a href="#Mapa">Mapa</a>
       <a href="#Objetivo">Objetivo</a>
-      <a href="#">Sugestões</a>
       <a href="#Equipe">Equipe</a>
+      <a onclick="OpenModalSugestoes()"> Sugestões </a>
     </div>
   </header>
 
@@ -217,10 +217,41 @@
     <div class="espacador"></div>
   </main>
 
-  <div class="janela-modal">
+  <div class="janela-modal" id="janela-modal">
+
+    <!-- Modal Sugestões -->
     <div class="modal-sugestoes">
+
+
+      <div class="espacador"></div>
+
+      <div class="titulo">
+        <h2>Deixe seu FeedBack</h2>
+        <hr>
+      </div>
+
+      <div class="box-sugestoes">
+        <div class="espacador"></div>
+
+        <p>A gente quer saber o que você achou! Conta pra gente sua experiência usando o site, o que tá legal, o que pode melhorar e quais ideias você teria pra deixar a Light-Point ainda mais incrível. Seu feedback ajuda a gente a evoluir e trazer uma experiência cada vez melhor para nossos clientes.</p>
+  
+        <div class="espacador"></div>
+
+        <textarea placeholder="Digite sua sugestão aqui..."></textarea>
+
+        <div class="espacador"></div>
+
+        <div class="box-btn">
+          <button  style="background-color: #30166B; color: #F2D561; border: 2px solid #F2D561;">Enviar</button>
+          <button id="fechar" style="cursor: pointer;">Fechar</button>
+        </div>
+
+      </div>
+
+      <div class="espacador"></div>
     
     </div>
+
   </div>
 </body>
 

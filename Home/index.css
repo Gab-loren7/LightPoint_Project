@@ -307,8 +307,8 @@ main {
   position: relative;
   margin: auto;
   margin: 0px 15px 15px;
-  width: 220px;
-  height: 230px;
+  width: 200px;
+  height: 210px;
   top: 30px;
   
   object-fit: cover;
@@ -344,6 +344,8 @@ main {
 /* Fim Main */
 
 /* Modais */
+
+
 .janela-modal {
   z-index: 1000;
   position: fixed;
@@ -354,14 +356,97 @@ main {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+}.janela-modal .espacador {
+  height: 30px;
+}.janela-modal .titulo {
+  text-align: center;
+  font-size: 36px;
+} /* Config do espaçador e titulo*/
+
+.janela-modal.abrir {
+  display: flex;
 }
 
+/* Config Container */
 .janela-modal .modal-sugestoes {
   margin: auto;
   z-index: 1001;
   background-color: #f1f1f1;
-  width: 600px;
-  height: 400px;
+  width: 60%;
+  min-width: 400px;
+  height: 80vh;
+  border: 10px solid #30166B;
   border-radius: 20px;
+  transition: ease all .5s;
+}.janela-modal .modal-sugestoes:hover {
+  box-shadow: #F2D561 0px 10px 20px 10px;
+
 }
+
+/* Config Container Conteudo */
+.modal-sugestoes .box-sugestoes {
+  padding-inline: 10%;
+  text-align: justify;
+}
+
+/* Config input */
+.box-sugestoes textarea {
+  width: 100%;
+  height: 20vh;
+  padding: 10px;
+
+  background-color: #e1e1e1;
+  border: 3px solid #30166B;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+
+  resize: none; /* impede o redimensionamento manual */
+  outline: none;
+  line-height: 1.5;
+  vertical-align: top;  /* Garante que o texto comece no topo */
+}.box-sugestoes textarea::placeholder{
+  position: absolute;
+  top: 10px;
+  color: #30166B;
+}.box-sugestoes textarea:focus{
+  outline: none;
+}
+
+/* Config button */
+.box-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}.box-btn button{
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+
+  background-color: #e1e1e1;
+  color: #30166B;
+  border: 2px solid #30166B;
+  border-radius: 20px;
+
+  font-size: 16px;
+  font-weight: 600;
+}/* Fim Config button */
+
+/* Animação Modal Sugestões */
+@keyframes abrirmodal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, -5px);
+  } to {
+    opacity: 1;
+    transform: translate3d(0,0,0 );
+  }
+}
+
+.abrir .modal-sugestoes{
+  animation: abrirmodal 0.5s;
+}
+/* Fim Animação Modal Sugestões */
+
+
 /* Fim Modais */
